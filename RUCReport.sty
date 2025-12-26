@@ -24,7 +24,7 @@
 \RequirePackage[left=2.50cm, right=2.50cm, top=2.50cm, bottom=2.50cm]{geometry}
 
 %%一些必要的宏包
-\RequirePackage[unicode=true,colorlinks,urlcolor=blue,linkcolor=black,bookmarksnumbered=true]{hyperref}
+\RequirePackage[unicode=true,colorlinks,urlcolor=blue,linkcolor=black,bookmarksnumbered=blue]{hyperref}
 \RequirePackage{latexsym,amssymb,amsmath,amsbsy,amsopn,amstext,amsthm,amsxtra,color,bm,calc,ifpdf}
 \RequirePackage{graphicx}
 \RequirePackage{enumerate}
@@ -34,23 +34,16 @@
 \RequirePackage{makeidx}
 \RequirePackage{xcolor}
 \RequirePackage{fontspec}
-
-
-
-%\RequirePackage{subfigure}
+\RequirePackage{subfigure}
 \PassOptionsToPackage{hyphens}{url}
 \RequirePackage{hyperref}
 \RequirePackage{pythonhighlight}
 \RequirePackage{graphicx}
-%\RequirePackage{caption}
+\RequirePackage{caption,subcaption}
+\RequirePackage{subfigure}
 \RequirePackage{tcolorbox}
-%\RequirePackage{subcaption}
-% 1. 这一步是为了防止旧模板自带 subfigure 导致冲突，先取消定义
-% 2. 加载现代的 caption 和 subcaption
-\usepackage{caption}
-\usepackage{subcaption}
 
-\RequirePackage{fontawesome5}
+\RequirePackage{fontawesome}
 \RequirePackage{caption}
 %% 去掉图标标题中的冒号，将分隔变为空格
 % 或者是：
@@ -144,17 +137,15 @@
         \vspace{0.5cm}
         \kaishu\Large 小组\ \dlmu[9cm]{第五小组（组长：陈晨）} \\ %学院
         \vspace{0.5cm}
-        \kaishu\Large 专业\ \dlmu[9cm]{控制科学与工程} \\ %班级
+        \kaishu\Large 专业\ \dlmu[9cm]控制科学与工程} \\ %班级
         \vspace{0.5cm}
-        \kaishu\Large 学号\ \dlmu[9cm]{12532823} \qquad  \\ %学号
+        \kaishu\Large 学号\ \dlmu[9cm]{12445034}  \\ %学号
         \vspace{0.5cm}
-        \kaishu\Large 姓名\ \dlmu[9cm]{谢正扬} \qquad \\ %姓名 
+        \kaishu\Large 姓名\ \dlmu[9cm]{陈晨} \\ %姓名 
     }
-    
         
     \date{\today} % 默认为今天的日期，可以注释掉不显示日期
 }
-
 
 %%在这里可更改封面logo
 \newcommand{\cover}{
